@@ -9,7 +9,6 @@ import urllib
 import re
 import time
 import random
-import pickle
 
 
 def get_yelp(zipcode, page_num):
@@ -52,9 +51,17 @@ def get_review(address):
     """get yelp review from web page."""
     soup = BeautifulSoup(urllib.request.urlopen(address).read(), "html5lib")
     try:
-        return soup('script', {'type': "application/ld+json"})
+        review = soup('script', {'type': "application/ld+json"})
+        for tag in soup.find_all('meta'):
+            try:
+                if tag.attrs['name'] == 'yelp-biz-id':
+                    biz_id = tag.attrs['content']
+                    return biz_id, review
+            except:
+                pass
     except:
-        return []
+        print("failed to get reviews")
+        return '', []
 
 
 def crawl(zipcodes):
@@ -63,20 +70,37 @@ def crawl(zipcodes):
     flag = True
     for zipcode in zipcodes:
         while flag:
-            reviews = {}
             resturants, flag = get_resturants(zipcode, page)
             for resturant in resturants:
-                review = get_review(resturants[resturant])
-                reviews[resturant] = review
-
+                biz_id, review = get_review(resturants[resturant])
+                reviews = review.pop()
+                reviews = reviews.get_text().split("\"description\"")
+                for review in reviews[1:]:
+                    try:
+                        "strip newline symbols"
+                        words = review.split("\"author\"")[0].\
+                            replace("\\n", '').lower()
+                        words = re.sub("[^a-zA-Z]", " ", words).split(" ")
+                        words = [word for word in words if len(word) > 1]
+                        if biz_id == '':
+                            words.insert(0, resturant)
+                        else:
+                            words.insert(0, biz_id)
+                        words.append('\n')
+                        words = ','.join(words)
+                    except:
+                        print('skip ' + resturant)
+                        pass
+                    with open(
+                            str(zipcodes).replace(',', '_').replace(
+                                '[', '').replace(']', '') + '.csv',
+                            'a') as file:
+                        file.write(words)
             if not flag:
                 print('Stopped')
                 break
             page += 1
-    with open(
-            str(zipcodes).replace(',', '_').replace('[', '').replace(']', ''),
-            'wb') as file:
-        pickle.dump(reviews, file)
+            time.sleep(random.randint(0, 1) * .931467298)
     return True
 
 
