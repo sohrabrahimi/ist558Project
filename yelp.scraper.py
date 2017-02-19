@@ -4,11 +4,12 @@ Scrapping yelp reviews in zipcode.
 ist558 project
 """
 
-from bs4 import BeautifulSoup
 import urllib
 import re
 import time
 import random
+from bs4 import BeautifulSoup
+import argparse
 
 
 def get_yelp(zipcode, page_num):
@@ -24,23 +25,16 @@ def get_resturants(zipcode, page_num):
         soup = BeautifulSoup(
             urllib.request.urlopen(page_url).read(), "html5lib")
     except:
-        print('stopped')
+        print('failed')
         return []
 
     resturants = soup.findAll(
         'div',
         attrs={'class': re.compile(r'^search-result natural-search-result')})
-
-    try:
-        assert (len(resturants) == 10)
-    except:
-        print('end of zipcode')
-        return [], False
-
     extracted = {}
-    for r in resturants:
-        name = r.find('a', {'class': 'biz-name'}).getText()
-        address = 'https://www.yelp.com/' + r.find(
+    for resturant in resturants:
+        name = resturant.find('a', {'class': 'biz-name'}).getText()
+        address = 'https://www.yelp.com/' + resturant.find(
             'a', {'class': 'biz-name'})['href']
         extracted[name] = address
 
@@ -64,20 +58,57 @@ def get_review(address):
         return '', []
 
 
+def get_attribute(address):
+    """get resturant parameters."""
+    soup = BeautifulSoup(urllib.request.urlopen(address).read(), "html5lib")
+
+    my_dict = {}
+
+    review_count = soup.find('span', {'itemprop': 'reviewCount'}).get_text()
+    rating_value = soup.find('meta', {'itemprop':
+                                      'ratingValue'}).attrs['content']
+    my_dict['ratingValue'] = rating_value
+    my_dict['ratingCount'] = review_count
+
+    for tag in soup.find_all('script'):
+        if tag.find(string=re.compile("longitude")):
+            text = tag.contents[0].splitlines()[-3].strip()
+            text = text[text.find('{') + 1:-3]
+            for word in text.split(','):
+                if len(word) == 1:
+                    my_dict['state'] = word
+                    pass
+                if len(word.split(':')) == 2:
+
+                    key, value = word.replace("\"", "").split(':')
+                    my_dict[key] = value
+    return my_dict
+
+
 def crawl(zipcodes):
     """crawl through list of zipcodes."""
     page = 0
     flag = True
+    header_flag = True
     for zipcode in zipcodes:
         while flag:
             resturants, flag = get_resturants(zipcode, page)
             for resturant in resturants:
                 biz_id, review = get_review(resturants[resturant])
+                attr_dict = get_attribute(resturants[resturant])
+                attr_dict['zipcode'] = str(zipcode)
+                with open(
+                        str(zipcodes).replace(',', '_').replace(
+                            '[', '').replace(']', '') + '_attributes.csv',
+                        'a') as file:
+                    if header_flag:
+                        file.write(','.join(list(attr_dict.keys())) + '\n')
+                        header_flag = False
+                    file.write(','.join(list(attr_dict.values())) + '\n')
                 reviews = review.pop()
                 reviews = reviews.get_text().split("\"description\"")
                 for review in reviews[1:]:
                     try:
-                        "strip newline symbols"
                         words = review.split("\"author\"")[0].\
                             replace("\\n", '').lower()
                         words = re.sub("[^a-zA-Z]", " ", words).split(" ")
@@ -90,7 +121,6 @@ def crawl(zipcodes):
                         words = ','.join(words)
                     except:
                         print('skip ' + resturant)
-                        pass
                     with open(
                             str(zipcodes).replace(',', '_').replace(
                                 '[', '').replace(']', '') + '.csv',
@@ -105,4 +135,16 @@ def crawl(zipcodes):
 
 
 if __name__ == '__main__':
-    data = crawl([16801])
+    parser = argparse.ArgumentParser(
+        description='Extracts all yelp restaurant \
+    data from a specified zip code (or all American zip codes if nothing \
+    is provided)')
+    parser.add_argument(
+        '-z',
+        '--zipcode',
+        nargs='+',
+        type=int,
+        help='Enter a zip code \
+    you\'t like to extract from.')
+    args = parser.parse_args()
+    crawl(args.zipcode)
