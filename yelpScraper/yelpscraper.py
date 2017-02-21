@@ -26,7 +26,7 @@ def get_resturants(zipcode, page_num):
             urllib.request.urlopen(page_url).read(), "html5lib")
     except:
         print('failed')
-        return []
+        return [], False
 
     resturants = soup.findAll(
         'div',
@@ -86,7 +86,7 @@ def get_attribute(address):
 
 def get_zipcode():
     """read zipcodes from file."""
-    with open('../data/zipcods.csv', 'r+') as file:
+    with open('../data/zipcodes.csv', 'r+') as file:
         zipcodes = [int(zipcode.strip()) for zipcode in
                     file.read().split('\n') if zipcode.strip()]
     return zipcodes
