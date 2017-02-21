@@ -1,0 +1,210 @@
+zipcode, geoquad, biz_name, state, longitude,ratingCount, city_state, category_aliases, latitude, biz_id,city,ratingValue
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0
+18041, 12848349, Golden Bowl II Chinese Restaurant, PA, -75.4972793,4, Pennsburg, chinese, 40.3987739, e2HO_lbs0uP1-Vis3WKG7w, Pennsburg,4.0
+18041, 12848514, Java Good Day Cafe, PA, -75.5010757446289,16, East Greenville, cafes, 40.4048805236816, wL0HYGv41L45c4ESAd74-A, East Greenville,5.0
+18041, 12848514, Who's Hungry Cafe And Doggery, PA, -75.500963177673,4, East Greenville, hotdog, 40.4047708709038, ZYEBy4pbqHc-u3Pnb5keeQ, East Greenville,3.5
+18041, 12848514, Mario's Cafe \u0026 Pizzeria, PA, -75.501094,13, East Greenville, pizza, 40.40469, r8IRwG0hEnZw83BsICxrng, East Greenville,4.0
+18041, 12848514, Fiesta Habenero II, PA, -75.5106802,21, East Greenville, mexican, 40.4153356, 3PKFAJ4jEAuNfCPXiWbZRw, East Greenville,3.5
+18041, 12848514, The Wing Man Bar \u0026 Grill, PA, -75.509417,44, East Greenville, tradamerican, 40.4130585, 8WjCZsFbTmQFHtOpPtTiPw, East Greenville,3.0
+18041, 12848514, China Taste, PA, -75.509417,12, East Greenville, chinese, 40.4130585, 2315vEYWa8vw2QOrhK-PqA, East Greenville,3.5
+18041, 12848514, Vince \u0026 Friends, PA, -75.5111189,11, East Greenville, pizza, 40.414601, XL1AsrvsLHU7yyin5OiTtA, East Greenville,2.5
+18041, 12848514, Goody'z, PA, -75.510029,17, East Greenville, burgers, 40.4149717, vSKxtgROTql5L36nVIBRWA, East Greenville,4.5
+18041, 12848514, Subway, PA, -75.5018603,4, East Greenville, sandwiches, 40.4052921, PewaO0yFbGj8vcUNCgIJ1g, East Greenville,4.0

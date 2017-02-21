@@ -8,8 +8,8 @@ import urllib
 import re
 import time
 import random
-from bs4 import BeautifulSoup
 import argparse
+from bs4 import BeautifulSoup
 
 
 def get_yelp(zipcode, page_num):
@@ -77,7 +77,6 @@ def get_attribute(address):
             for word in text.split(','):
                 if len(word) == 1:
                     my_dict['state'] = word
-                    pass
                 if len(word.split(':')) == 2:
 
                     key, value = word.replace("\"", "").split(':')
@@ -85,22 +84,34 @@ def get_attribute(address):
     return my_dict
 
 
-def crawl(zipcodes):
+def get_zipcode():
+    """read zipcodes from file."""
+    with open('../data/zipcods.csv', 'r+') as file:
+        zipcodes = [int(zipcode.strip()) for zipcode in
+                    file.read().split('\n') if zipcode.strip()]
+    return zipcodes
+
+
+def crawl(zipcodes=None):
     """crawl through list of zipcodes."""
     page = 0
     flag = True
     header_flag = True
+    biz_list = []
+    zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
+        if page != 0:
+            time.sleep(random.random() * 4 + 10)
         while flag:
             resturants, flag = get_resturants(zipcode, page)
             for resturant in resturants:
                 biz_id, review = get_review(resturants[resturant])
+                if biz_id in biz_list:
+                    continue
+                biz_list.append(biz_id)
                 attr_dict = get_attribute(resturants[resturant])
                 attr_dict['zipcode'] = str(zipcode)
-                with open(
-                        str(zipcodes).replace(',', '_').replace(
-                            '[', '').replace(']', '') + '_attributes.csv',
-                        'a') as file:
+                with open('../data/attributes.csv', 'a') as file:
                     if header_flag:
                         file.write(','.join(list(attr_dict.keys())) + '\n')
                         header_flag = False
@@ -121,10 +132,7 @@ def crawl(zipcodes):
                         words = ','.join(words)
                     except:
                         print('skip ' + resturant)
-                    with open(
-                            str(zipcodes).replace(',', '_').replace(
-                                '[', '').replace(']', '') + '.csv',
-                            'a') as file:
+                    with open('../data/reviews.csv', 'a') as file:
                         file.write(words)
             if not flag:
                 print('Stopped')
