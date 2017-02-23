@@ -9,7 +9,8 @@ import time
 import random
 import argparse
 from bs4 import BeautifulSoup
-
+from utils.networker import  *
+from collections import deque
 
 def get_yelp(zipcode, page_num):
     """get yelp address for given zipcode and page number."""
@@ -21,10 +22,14 @@ def get_resturants(zipcode, page_num):
     """get resturant names and web page."""
     try:
         page_url = get_yelp(zipcode, page_num)
-        soup = BeautifulSoup(urlopen(page_url).read(), "html5lib")
+        soup = BeautifulSoup(get(page_url).text, 'html.parser')
+
+        if soup.find_all('title').get_text() == u'503 Service Unavailable':
+            print('get_resturant: 503 error')
     except:
-        print('failed')
+        print('get_resturant failed')
         return [], False
+
 
     resturants = soup.findAll(
         'div',
@@ -41,7 +46,7 @@ def get_resturants(zipcode, page_num):
 
 def get_review(address):
     """get yelp review from web page."""
-    soup = BeautifulSoup(urlopen(address).read(), "html5lib")
+    soup = BeautifulSoup(get(address).text)
     try:
         review = soup('script', {'type': "application/ld+json"})
         for tag in soup.find_all('meta'):
@@ -58,8 +63,10 @@ def get_review(address):
 
 def get_attribute(address):
     """get resturant parameters."""
-    soup = BeautifulSoup(urlopen(address).read(), "html5lib")
-
+    try:
+        soup = BeautifulSoup(get(address).text)
+    except:
+        print('get_attribute failed')
     my_dict = {}
 
     review_count = soup.find('span', {'itemprop': 'reviewCount'}).get_text()
@@ -84,7 +91,7 @@ def get_attribute(address):
 
 def get_zipcode():
     """read zipcodes from file."""
-    with open('../data/zipcodes.csv', 'r+') as file:
+    with open('./data/zipcodes.csv', 'r+') as file:
         zipcodes = [
             int(zipcode.strip()) for zipcode in file.read().split('\n')
             if zipcode.strip()
@@ -92,26 +99,44 @@ def get_zipcode():
     return zipcodes
 
 
-def crawl(zipcodes=None):
+def crawl(zipcodes=None, tor=False):
     """crawl through list of zipcodes."""
+    if tor:
+        set_new_ip()
+        used_ips = deque()
+        used_ips.append(get_current_ip())
+    else:
+        get = urlopen
     page = 0
+    request_count = 0
     flag = True
     header_flag = True
     biz_list = []
     zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
         if page != 0:
-            time.sleep(random.random() * 4 + 10)
+            time.sleep(random.random() * 1 + 1)
         while flag:
+            request_count += 1
             resturants, flag = get_resturants(zipcode, page)
             for resturant in resturants:
+                if request_count % 50 == 0 and tor:
+                    ensure_new_ip(used_ips)
+                    request_count = 0
+                elif request_count % 50 == 0:
+                    time.sleep(60 * 15)
+                    request_count = 0
+                request_count += 1
                 biz_id, review = get_review(resturants[resturant])
                 if biz_id in biz_list:
                     continue
+                print('scraping returant {}, at zipcode {}, current IP address {}'.
+                      format(biz_id, zipcode, get_current_ip()))
                 biz_list.append(biz_id)
+                request_count += 1
                 attr_dict = get_attribute(resturants[resturant])
                 attr_dict['zipcode'] = str(zipcode)
-                with open('../data/attributes.csv', 'a') as file:
+                with open('./data/' + str(zipcode) +'attributes.csv', 'a') as file:
                     if header_flag:
                         file.write(','.join(list(attr_dict.keys())) + '\n')
                         header_flag = False
@@ -132,7 +157,7 @@ def crawl(zipcodes=None):
                         words = ','.join(words)
                     except:
                         print('skip ' + resturant)
-                    with open('../data/reviews.csv', 'a') as file:
+                    with open('./data/' + str(zipcode) +'reviews.csv', 'a') as file:
                         file.write(words)
             if not flag:
                 print('Stopped')
@@ -154,5 +179,9 @@ if __name__ == '__main__':
         type=int,
         help='Enter a zip code \
     you\'t like to extract from.')
+    parser.add_argument('-t',
+                        '--tor',
+                        action='store_true',
+                        help='use tor to change ip address')
     args = parser.parse_args()
-    crawl(args.zipcode)
+    crawl(zipcodes=args.zipcode, tor=args.tor)

@@ -58,7 +58,7 @@ except Exception as exc:
                     .format(user_agents=USER_AGENTS, details=exc.message))
 
 
-def get(url, timeout=15, params=None, log=True):
+def get(url, timeout=20, params=None, log=True):
     """GET data from specified URL
 
     :argument url: web site address
