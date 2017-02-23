@@ -18,18 +18,28 @@ def get_yelp(zipcode, page_num):
         '&ns=1#cflt=restaurants&start={1}'.format(zipcode, page_num)
 
 
-def get_resturants(zipcode, page_num):
+def get_resturants(zipcode, page_num, tor=False):
     """get resturant names and web page."""
-    try:
-        page_url = get_yelp(zipcode, page_num)
-        soup = BeautifulSoup(get(page_url).text, 'html.parser')
+    if tor:
+        try:
+            page_url = get_yelp(zipcode, page_num)
+            soup = BeautifulSoup(get(page_url).text, 'html.parser')
 
-        if soup.find_all('title').get_text() == u'503 Service Unavailable':
-            print('get_resturant: 503 error')
-    except:
-        print('get_resturant failed')
-        return [], False
+            if soup.find_all('title').get_text() == u'503 Service Unavailable':
+                print('get_resturant: 503 error')
+        except:
+            print('tor, get_resturant failed')
+            return [], False
+    else:
+        try:
+            page_url = get_yelp(zipcode, page_num)
+            soup = BeautifulSoup(urlopen(page_url).read(), 'html.parser')
 
+            if soup.find_all('title').get_text() == u'503 Service Unavailable':
+                print('get_resturant: 503 error')
+        except:
+            print('get_resturant failed')
+            return [], False
 
     resturants = soup.findAll(
         'div',
@@ -44,9 +54,12 @@ def get_resturants(zipcode, page_num):
     return extracted, True
 
 
-def get_review(address):
+def get_review(address, tor=False):
     """get yelp review from web page."""
-    soup = BeautifulSoup(get(address).text)
+    if tor:
+        soup = BeautifulSoup(get(address).text)
+    else:
+        soup = BeautifulSoup(urlopen(address).read())
     try:
         review = soup('script', {'type': "application/ld+json"})
         for tag in soup.find_all('meta'):
@@ -61,10 +74,13 @@ def get_review(address):
         return '', []
 
 
-def get_attribute(address):
+def get_attribute(address, tor=False):
     """get resturant parameters."""
     try:
-        soup = BeautifulSoup(get(address).text)
+        if tor:
+            soup = BeautifulSoup(get(address).text)
+        else:
+            soup = BeautifulSoup(urlopen(address).read())
     except:
         print('get_attribute failed')
     my_dict = {}
@@ -105,8 +121,6 @@ def crawl(zipcodes=None, tor=False):
         set_new_ip()
         used_ips = deque()
         used_ips.append(get_current_ip())
-    else:
-        get = urlopen
     page = 0
     request_count = 0
     flag = True
@@ -118,7 +132,7 @@ def crawl(zipcodes=None, tor=False):
             time.sleep(random.random() * 1 + 1)
         while flag:
             request_count += 1
-            resturants, flag = get_resturants(zipcode, page)
+            resturants, flag = get_resturants(zipcode, page, tor)
             for resturant in resturants:
                 if request_count % 50 == 0 and tor:
                     ensure_new_ip(used_ips)
@@ -127,7 +141,7 @@ def crawl(zipcodes=None, tor=False):
                     time.sleep(60 * 10)
                     request_count = 0
                 request_count += 1
-                biz_id, review = get_review(resturants[resturant])
+                biz_id, review = get_review(resturants[resturant], tor)
                 if biz_id in biz_list:
                     print('repeated resturant:', biz_id)
                     continue
@@ -135,7 +149,7 @@ def crawl(zipcodes=None, tor=False):
                       format(biz_id, zipcode, get_current_ip()))
                 biz_list.append(biz_id)
                 request_count += 1
-                attr_dict = get_attribute(resturants[resturant])
+                attr_dict = get_attribute(resturants[resturant], tor)
                 attr_dict['zipcode'] = str(zipcode)
                 with open('./data/' + str(zipcode) +'attributes.csv', 'a') as file:
                     if header_flag:
