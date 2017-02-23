@@ -123,12 +123,13 @@ def crawl(zipcodes=None, tor=False):
                 if request_count % 50 == 0 and tor:
                     ensure_new_ip(used_ips)
                     request_count = 0
-                elif request_count % 50 == 0:
-                    time.sleep(60 * 15)
+                elif request_count % 50 == 0 and not tor:
+                    time.sleep(60 * 10)
                     request_count = 0
                 request_count += 1
                 biz_id, review = get_review(resturants[resturant])
                 if biz_id in biz_list:
+                    print('repeated resturant:', biz_id)
                     continue
                 print('scraping returant {}, at zipcode {}, current IP address {}'.
                       format(biz_id, zipcode, get_current_ip()))
@@ -156,14 +157,14 @@ def crawl(zipcodes=None, tor=False):
                         words.append('\n')
                         words = ','.join(words)
                     except:
-                        print('skip ' + resturant)
+                        print('skipped ' + resturant)
                     with open('./data/' + str(zipcode) +'reviews.csv', 'a') as file:
                         file.write(words)
             if not flag:
-                print('Stopped')
+                print('failed to get new resturant, stop.')
                 break
             page += 1
-            time.sleep(random.randint(0, 1) * .931467298)
+            time.sleep(random.randint(0, 1) * 2.31467298)
     return True
 
 
