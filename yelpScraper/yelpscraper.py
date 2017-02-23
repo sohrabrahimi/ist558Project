@@ -3,8 +3,7 @@ Scrapping yelp reviews in zipcode.
 
 ist558 project
 """
-
-import urllib
+from urllib2 import urlopen
 import re
 import time
 import random
@@ -22,8 +21,7 @@ def get_resturants(zipcode, page_num):
     """get resturant names and web page."""
     try:
         page_url = get_yelp(zipcode, page_num)
-        soup = BeautifulSoup(
-            urllib.request.urlopen(page_url).read(), "html5lib")
+        soup = BeautifulSoup(urlopen(page_url).read(), "html5lib")
     except:
         print('failed')
         return [], False
@@ -43,7 +41,7 @@ def get_resturants(zipcode, page_num):
 
 def get_review(address):
     """get yelp review from web page."""
-    soup = BeautifulSoup(urllib.request.urlopen(address).read(), "html5lib")
+    soup = BeautifulSoup(urlopen(address).read(), "html5lib")
     try:
         review = soup('script', {'type': "application/ld+json"})
         for tag in soup.find_all('meta'):
@@ -60,7 +58,7 @@ def get_review(address):
 
 def get_attribute(address):
     """get resturant parameters."""
-    soup = BeautifulSoup(urllib.request.urlopen(address).read(), "html5lib")
+    soup = BeautifulSoup(urlopen(address).read(), "html5lib")
 
     my_dict = {}
 
@@ -87,8 +85,10 @@ def get_attribute(address):
 def get_zipcode():
     """read zipcodes from file."""
     with open('../data/zipcodes.csv', 'r+') as file:
-        zipcodes = [int(zipcode.strip()) for zipcode in
-                    file.read().split('\n') if zipcode.strip()]
+        zipcodes = [
+            int(zipcode.strip()) for zipcode in file.read().split('\n')
+            if zipcode.strip()
+        ]
     return zipcodes
 
 
