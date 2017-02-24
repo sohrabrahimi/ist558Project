@@ -14,9 +14,7 @@ from collections import deque
 
 def get_yelp(zipcode, page_num):
     """get yelp address for given zipcode and page number."""
-    return 'http://www.yelp.com/search?find_desc=&find_loc={0}' \
-        '&ns=1#cflt=restaurants&start={1}'.format(zipcode, page_num)
-
+    return 'https://www.yelp.com/search?find_loc={}&start={}&cflt=restaurants'.format(zipcode, page_num)
 
 def get_resturants(zipcode, page_num, tor=False):
     """get resturant names and web page."""
@@ -24,9 +22,6 @@ def get_resturants(zipcode, page_num, tor=False):
         try:
             page_url = get_yelp(zipcode, page_num)
             soup = BeautifulSoup(get(page_url).text, 'html.parser')
-
-            if soup.find_all('title').get_text() == u'503 Service Unavailable':
-                print('get_resturant: 503 error')
         except:
             print('tor, get_resturant failed')
             return [], False
@@ -34,9 +29,6 @@ def get_resturants(zipcode, page_num, tor=False):
         try:
             page_url = get_yelp(zipcode, page_num)
             soup = BeautifulSoup(urlopen(page_url).read(), 'html.parser')
-
-            if soup.find_all('title').get_text() == u'503 Service Unavailable':
-                print('get_resturant: 503 error')
         except:
             print('get_resturant failed')
             return [], False
@@ -51,7 +43,7 @@ def get_resturants(zipcode, page_num, tor=False):
             'a', {'class': 'biz-name'})['href']
         extracted[name] = address
 
-    return extracted, True
+    return extracted, len(extracted) > 0
 
 
 def get_review(address, tor=False):
@@ -59,7 +51,7 @@ def get_review(address, tor=False):
     if tor:
         soup = BeautifulSoup(get(address).text)
     else:
-        soup = BeautifulSoup(urlopen(address).read())
+        soup = BeautifulSoup(urlopen(address).read(), 'html.parser')
     try:
         review = soup('script', {'type': "application/ld+json"})
         for tag in soup.find_all('meta'):
@@ -80,14 +72,18 @@ def get_attribute(address, tor=False):
         if tor:
             soup = BeautifulSoup(get(address).text)
         else:
-            soup = BeautifulSoup(urlopen(address).read())
+            soup = BeautifulSoup(urlopen(address).read(), 'html.parser')
     except:
         print('get_attribute failed')
     my_dict = {}
 
-    review_count = soup.find('span', {'itemprop': 'reviewCount'}).get_text()
-    rating_value = soup.find('meta', {'itemprop':
+    try:
+        review_count = soup.find('span', {'itemprop': 'reviewCount'}).get_text()
+        rating_value = soup.find('meta', {'itemprop':
                                       'ratingValue'}).attrs['content']
+    except:
+        review_count = ''
+        rating_value = ''
     my_dict['ratingValue'] = rating_value
     my_dict['ratingCount'] = review_count
 
@@ -115,43 +111,52 @@ def get_zipcode():
     return zipcodes
 
 
-def crawl(zipcodes=None, tor=False):
+def crawl(zipcodes=None, tor=False, sleep_time=10):
     """crawl through list of zipcodes."""
     if tor:
+        ip_address = get_current_ip()
         set_new_ip()
         used_ips = deque()
         used_ips.append(get_current_ip())
+    else:
+        ip_address = urlopen('https://icanhazip.com/').read().replace('\n', '')
     page = 0
     request_count = 0
     flag = True
     header_flag = True
-    biz_list = []
+    resturant_list = []
     zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
         if page != 0:
-            time.sleep(random.random() * 1 + 1)
+            time = random.random() * 3 + 1
+            print('sleep for {} minute'.format(time))
+            time.sleep(time)
         while flag:
             request_count += 1
+            print('page {}, at zipcode {}'.format(page, zipcode))
             resturants, flag = get_resturants(zipcode, page, tor)
             for resturant in resturants:
+                if resturant in resturant_list:
+                    print('repeated resturant:', resturant)
+                    continue
+                print('scraping returant:' + resturant +
+                        ', at zipcode:' + str(zipcode) +
+                        ', current IP address:' + ip_address)
+                resturant_list.append(resturant)
                 if request_count % 50 == 0 and tor:
                     ensure_new_ip(used_ips)
                     request_count = 0
+                    print('reached 50 requests, change ip address')
                 elif request_count % 50 == 0 and not tor:
-                    time.sleep(60 * 10)
+                    print('reached 50 request, going to sleep {} minutes'.format(sleep_time))
+                    time.sleep(60 * sleep_time)
                     request_count = 0
                 request_count += 1
                 biz_id, review = get_review(resturants[resturant], tor)
-                if biz_id in biz_list:
-                    print('repeated resturant:', biz_id)
-                    continue
-                print('scraping returant {}, at zipcode {}, current IP address {}'.
-                      format(biz_id, zipcode, get_current_ip()))
-                biz_list.append(biz_id)
                 request_count += 1
                 attr_dict = get_attribute(resturants[resturant], tor)
                 attr_dict['zipcode'] = str(zipcode)
-                with open('./data/' + str(zipcode) +'attributes.csv', 'a') as file:
+                with open('./data/' + str(zipcode) +'_attributes.csv', 'a') as file:
                     if header_flag:
                         file.write(','.join(list(attr_dict.keys())) + '\n')
                         header_flag = False
@@ -172,13 +177,10 @@ def crawl(zipcodes=None, tor=False):
                         words = ','.join(words)
                     except:
                         print('skipped ' + resturant)
-                    with open('./data/' + str(zipcode) +'reviews.csv', 'a') as file:
+                    with open('./data/' + str(zipcode) +'_reviews.csv', 'a') as file:
                         file.write(words)
-            if not flag:
-                print('failed to get new resturant, stop.')
-                break
-            page += 1
-            time.sleep(random.randint(0, 1) * 2.31467298)
+
+            page += 10
     return True
 
 
@@ -199,4 +201,4 @@ if __name__ == '__main__':
                         action='store_true',
                         help='use tor to change ip address')
     args = parser.parse_args()
-    crawl(zipcodes=args.zipcode, tor=args.tor)
+    crawl(zipcodes=args.zipcode, tor=args.tor, sleep_time=10)
