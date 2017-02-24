@@ -1,28 +1,31 @@
 city, category_aliases, biz_name, city_state, longitude,zipcode, state,ratingValue, biz_id,ratingCount, latitude, geoquad
- East Greenville, latin, Latin Mixture, East Greenville,-75.5011173,18041, PA,5, cft1KKpu9L9tMkO5YQ1u0Q,1,40.4047248,12848514
- East Greenville, tradamerican, The Wing Man Bar \u0026 Grill, East Greenville,-75.509417,18041, PA,3, 8WjCZsFbTmQFHtOpPtTiPw,44,40.4130585,12848514
- East Greenville, burgers, Goody'z, East Greenville,-75.510029,18041, PA,4.5, vSKxtgROTql5L36nVIBRWA,17,40.4149717,12848514
- East Greenville, chinese, China Taste, East Greenville,-75.509417,18041, PA,3.5, 2315vEYWa8vw2QOrhK-PqA,12,40.4130585,12848514
- East Greenville, pizza, Vince \u0026 Friends, East Greenville,-75.5111189,18041, PA,2.5, XL1AsrvsLHU7yyin5OiTtA,11,40.414601,12848514
- East Greenville, pizza, Mario's Cafe \u0026 Pizzeria, East Greenville,-75.501094,18041, PA,4, r8IRwG0hEnZw83BsICxrng,13,40.40469,12848514
- Pennsburg, breakfast_brunch, The Valley Caf\u00e9, Pennsburg,-75.4984588623,18041, PA,4.5, KYZvaxefRe-bxKEwQoR4jg,20,40.3967170715,12848349
- East Greenville, mexican, Fiesta Habenero II, East Greenville,-75.5106802,18041, PA,3.5, 3PKFAJ4jEAuNfCPXiWbZRw,21,40.4153356,12848514
- East Greenville, cafes, Java Good Day Cafe, East Greenville,-75.5010757446,18041, PA,5, wL0HYGv41L45c4ESAd74-A,16,40.4048805237,12848514
- East Greenville, hotdog, Who's Hungry Cafe And Doggery, East Greenville,-75.5009631777,18041, PA,3.5, ZYEBy4pbqHc-u3Pnb5keeQ,4,40.4047708709,12848514
- Pennsburg, sportsbars, Tosco's Pub and Grill, Pennsburg,-75.4912901,18041, PA,4.5, OPHGs4-Lm5b24TVToalq6Q,10,40.3902959,12848349
- Souderton, pizza, Penelope's Pies \u0026 Pasta, Souderton,-75.4984588623,18041, PA,4, oeJ2PDZd1owLEsVkCMaVdw,9,40.3967170715,12848349
- Pennsburg, chinese, Golden Bowl II Chinese Restaurant, Pennsburg,-75.4972793,18041, PA,4, e2HO_lbs0uP1-Vis3WKG7w,4,40.3987739,12848349
- Pennsburg, pizza, Chiaro's Pizza \u0026 Restaurant - Pennsburg, Pennsburg,-75.497849,18041, PA,3, 0qMuzRkFDNO-8OBZf3Yi3w,6,40.398991,12848349
- East Greenville, sandwiches, Subway, East Greenville,-75.5105715,18041, PA,2, aJ3RCTd8nD1qIB8YtycdrA,4,40.4107086,12848514
- East Greenville, steak, Carriage House Restaurant, East Greenville,-75.5240535736,18041, PA,4, rTU0dLomKBidMt5VofjldA,25,40.4234612251,12848514
- Pennsburg, italian, Tosco's Restaurant, Pennsburg,-75.490928,18041, PA,4, XukG-TOyJI-7Pf7IKnO7hg,44,40.390187,12848349
- Pennsburg, diners, Pennsburg Diner, Pennsburg,-75.5008504,18041, PA,2.5, n77ctBbHtuvYAQvfcZAUkw,23,40.394531,12848343
- Pennsburg, pizza, Pizza Como \u0026 PC Pub, Pennsburg,-75.5027022,18041, PA,2.5, lMmqQHYwwp_fDAHFbeDadg,46,40.3926753,12848343
- Easton, italian, Pizza Hut, Easton,-75.5021417,18041, PA,, CRb04biqKIXzXD3q_ksZ6A,,40.3929837,12848343
- Pennsburg, chinese, Joy Inn, Pennsburg,-75.5000896442,18041, PA,4.5, PYaQwpj5JzI4LOwXJi16YQ,6,40.3928633034,12848343
- Pennsburg, chinese, China Wok, Pennsburg,-75.4939092,18041, PA,4, jgpZuyUtIxCY1mG_oO5cPg,5,40.4015301,12848520
- East Greenville, italian, Domino's Pizza, East Greenville,-75.509417,18041, PA,1.5, baPoGL-fWahLLSNNoyLWbA,6,40.4130585,12848514
- Pennsburg, hotdogs, McDonald's, Pennsburg,-75.5019387,18041, PA,1.5, t-ZpeItaWnYymUK1Hrzr1A,5,40.3930283,12848343
- East Greenville, tradamerican, Powderbourne Sportsman's Club, East Greenville,-75.4851894,18041, PA,4, G9sVVwy3KmwfqiZqOuT_HA,28,40.4172513,12848520
- East Greenville, sandwiches, E Z Shoppe, East Greenville,-75.5037629977,18041, PA,, Mc7OuaO6EZiflw8qGcrvPw,,40.407359994,12848514
- East Greenville, delis, Mohr's Store, East Greenville,-75.5032698,18041, PA,, 8QeYBLUHCV-m8EY1mOK62Q,,40.407379,12848514
+ East Greenville, latin, Latin Mixture, East Greenville, -75.5011173,18041, PA,5.0, cft1KKpu9L9tMkO5YQ1u0Q,1, 40.4047248, 12848514
+ East Greenville, tradamerican, The Wing Man Bar \u0026 Grill, East Greenville, -75.509417,18041, PA,3.0, 8WjCZsFbTmQFHtOpPtTiPw,44, 40.4130585, 12848514
+ East Greenville, burgers, Goody'z, East Greenville, -75.510029,18041, PA,4.5, vSKxtgROTql5L36nVIBRWA,17, 40.4149717, 12848514
+ East Greenville, chinese, China Taste, East Greenville, -75.509417,18041, PA,3.5, 2315vEYWa8vw2QOrhK-PqA,12, 40.4130585, 12848514
+ East Greenville, pizza, Vince \u0026 Friends, East Greenville, -75.5111189,18041, PA,2.5, XL1AsrvsLHU7yyin5OiTtA,11, 40.414601, 12848514
+ East Greenville, pizza, Mario's Cafe \u0026 Pizzeria, East Greenville, -75.501094,18041, PA,4.0, r8IRwG0hEnZw83BsICxrng,13, 40.40469, 12848514
+ Pennsburg, breakfast_brunch, The Valley Caf\u00e9, Pennsburg, -75.4984588623047,18041, PA,4.5, KYZvaxefRe-bxKEwQoR4jg,20, 40.3967170715332, 12848349
+ East Greenville, mexican, Fiesta Habenero II, East Greenville, -75.5106802,18041, PA,3.5, 3PKFAJ4jEAuNfCPXiWbZRw,21, 40.4153356, 12848514
+ East Greenville, cafes, Java Good Day Cafe, East Greenville, -75.5010757446289,18041, PA,5.0, wL0HYGv41L45c4ESAd74-A,16, 40.4048805236816, 12848514
+ East Greenville, hotdog, Who's Hungry Cafe And Doggery, East Greenville, -75.500963177673,18041, PA,3.5, ZYEBy4pbqHc-u3Pnb5keeQ,4, 40.4047708709038, 12848514
+ Pennsburg, sportsbars, Tosco's Pub and Grill, Pennsburg, -75.4912901,18041, PA,4.5, OPHGs4-Lm5b24TVToalq6Q,10, 40.3902959, 12848349
+ Souderton, pizza, Penelope's Pies \u0026 Pasta, Souderton, -75.4984588623047,18041, PA,4.0, oeJ2PDZd1owLEsVkCMaVdw,9, 40.3967170715332, 12848349
+ Pennsburg, chinese, Golden Bowl II Chinese Restaurant, Pennsburg, -75.4972793,18041, PA,4.0, e2HO_lbs0uP1-Vis3WKG7w,4, 40.3987739, 12848349
+ Pennsburg, pizza, Chiaro's Pizza \u0026 Restaurant - Pennsburg, Pennsburg, -75.497849,18041, PA,3.0, 0qMuzRkFDNO-8OBZf3Yi3w,6, 40.398991, 12848349
+ East Greenville, sandwiches, Subway, East Greenville, -75.5105715,18041, PA,2.0, aJ3RCTd8nD1qIB8YtycdrA,4, 40.4107086, 12848514
+ East Greenville, steak, Carriage House Restaurant, East Greenville, -75.5240535736084,18041, PA,4.0, rTU0dLomKBidMt5VofjldA,25, 40.4234612251377, 12848514
+ Pennsburg, italian, Tosco's Restaurant, Pennsburg, -75.490928,18041, PA,4.0, XukG-TOyJI-7Pf7IKnO7hg,44, 40.390187, 12848349
+ Pennsburg, diners, Pennsburg Diner, Pennsburg, -75.5008504,18041, PA,2.5, n77ctBbHtuvYAQvfcZAUkw,23, 40.394531, 12848343
+ Pennsburg, pizza, Pizza Como \u0026 PC Pub, Pennsburg, -75.5027022,18041, PA,2.5, lMmqQHYwwp_fDAHFbeDadg,46, 40.3926753, 12848343
+ Easton, italian, Pizza Hut, Easton, -75.5021417,18041, PA,, CRb04biqKIXzXD3q_ksZ6A,, 40.3929837, 12848343
+ Pennsburg, chinese, Joy Inn, Pennsburg, -75.500089644203,18041, PA,4.5, PYaQwpj5JzI4LOwXJi16YQ,6, 40.3928633033884, 12848343
+ Pennsburg, chinese, China Wok, Pennsburg, -75.4939092,18041, PA,4.0, jgpZuyUtIxCY1mG_oO5cPg,5, 40.4015301, 12848520
+ East Greenville, italian, Domino's Pizza, East Greenville, -75.509417,18041, PA,1.5, baPoGL-fWahLLSNNoyLWbA,6, 40.4130585, 12848514
+ Pennsburg, hotdogs, McDonald's, Pennsburg, -75.5019387,18041, PA,1.5, t-ZpeItaWnYymUK1Hrzr1A,5, 40.3930283, 12848343
+ East Greenville, tradamerican, Powderbourne Sportsman's Club, East Greenville, -75.4851894,18041, PA,4.0, G9sVVwy3KmwfqiZqOuT_HA,28, 40.4172513, 12848520
+ East Greenville, sandwiches, E Z Shoppe, East Greenville, -75.5037629976869,18041, PA,, Mc7OuaO6EZiflw8qGcrvPw,, 40.4073599939513, 12848514
+ East Greenville, delis, Mohr's Store, East Greenville, -75.5032698,18041, PA,, 8QeYBLUHCV-m8EY1mOK62Q,, 40.407379, 12848514
+city, category_aliases, biz_name, city_state, longitude,zipcode, state,ratingValue, biz_id,ratingCount, latitude, geoquad
+ East Greenville, latin, Latin Mixture, East Greenville, -75.5011173,18041, PA,5.0, cft1KKpu9L9tMkO5YQ1u0Q,1, 40.4047248, 12848514
+ East Greenville, tradamerican, The Wing Man Bar \u0026 Grill, East Greenville, -75.509417,18041, PA,3.0, 8WjCZsFbTmQFHtOpPtTiPw,44, 40.4130585, 12848514

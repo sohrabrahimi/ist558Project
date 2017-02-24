@@ -127,32 +127,29 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
     resturant_list = []
     zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
-        if page != 0:
-            time = random.random() * 3 + 1
-            print('sleep for {} minute'.format(time))
-            time.sleep(time)
+        flag = True
         while flag:
             request_count += 1
             print('page {}, at zipcode {}'.format(page, zipcode))
             resturants, flag = get_resturants(zipcode, page, tor)
             for resturant in resturants:
-                if resturant in resturant_list:
-                    print('repeated resturant:', resturant)
-                    continue
-                print('scraping returant:' + resturant +
-                        ', at zipcode:' + str(zipcode) +
-                        ', current IP address:' + ip_address)
-                resturant_list.append(resturant)
                 if request_count % 50 == 0 and tor:
                     ensure_new_ip(used_ips)
                     request_count = 0
                     print('reached 50 requests, change ip address')
-                elif request_count % 50 == 0 and not tor:
+                if request_count % 50 == 0 and not tor:
                     print('reached 50 request, going to sleep {} minutes'.format(sleep_time))
                     time.sleep(60 * sleep_time)
                     request_count = 0
                 request_count += 1
                 biz_id, review = get_review(resturants[resturant], tor)
+                if biz_id in resturant_list:
+                    print('repeated resturant:', resturant)
+                    continue
+                print('scraping returant:' + resturant +
+                        ', at zipcode:' + str(zipcode) +
+                        ', current IP address:' + ip_address)
+                resturant_list.append(biz_id)
                 request_count += 1
                 attr_dict = get_attribute(resturants[resturant], tor)
                 attr_dict['zipcode'] = str(zipcode)
