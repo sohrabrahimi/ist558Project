@@ -164,6 +164,8 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
             else:
                 break
         while flag:
+            if page > 500:
+                break
             request_count += 1
             print('page {}, at zipcode {}'.format(page, zipcode))
             resturants, flag = get_resturants(zipcode, page, tor)
