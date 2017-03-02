@@ -2,4 +2,4 @@
 
 from yelpscraper import yelpscraper
 
-yelpscraper.crawl()
+yelpscraper.crawl(sleep_time=1)

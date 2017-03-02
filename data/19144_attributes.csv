@@ -1,0 +1,85 @@
+city, category_aliases, biz_name, city_state,zipcode, longitude, state,ratingValue, biz_id,ratingCount, latitude, geoquad
+ Philadelphia, vegan, Nile Cafe, Philadelphia,19144, -75.1780373, PA,4.5, C6cOQD3ELF38AeYgtfw0Dw,42, 40.0394638, 12848704
+ Philadelphia, pizza, Pizzeria Nonna, Philadelphia,19144, -75.1692651229736, PA,4.0, G1JyMrO7517uoHUKMYUaeA,60, 40.0324443788558, 12848704
+ Philadelphia, cafes, Rose Petals Cafe \u0026 Lounge, Philadelphia,19144, -75.1808236, PA,4.0, hOupS2QRNIuMLfcpOqC0oA,152, 40.0295403, 12848704
+ Philadelphia, vegan, All The Way Live, Philadelphia,19144, -75.179055, PA,4.5, cSaoPFiZUzaTgnxM91KgXg,22, 40.040523, 12848704
+ Philadelphia, restaurants, J \u0026 S Restaurant, Philadelphia,19144, -75.1746194, PA,5.0, _tKHeWMVWiIetaruE_EQSQ,3, 40.0362971, 12848704
+ Philadelphia, vegetarian, The Flower Cafe At Linda's, Philadelphia,19144, -75.175033, PA,5.0, CLIsXugvRCV-h_Suc-xN2g,7, 40.0340291, 12848704
+ Philadelphia, fooddeliveryservices, Sun Shanty Jamaican Takeout Restaurant, Philadelphia,19144, -75.1792028, PA,4.0, aat6y_n-9Hh8EqbOqXf1WA,14, 40.0407678, 12848704
+ Philadelphia, soulfood, TyeMeka's Soul Food, Philadelphia,19144, -75.1768156, PA,3.5, HSXvx9ajd9cGDzYIScmrig,13, 40.0382288, 12848704
+ Philadelphia, breakfast_brunch, B\u0026B Breakfast and Lunch, Philadelphia,19144, -75.173616, PA,3.5, oLuOJ-3q8zJ-mhrwcR28eg,15, 40.035267, 12848704
+ Philadelphia, pizza, Takka Grill and Pizza, Philadelphia,19144, -75.1810627430677, PA,4.0, TIeuWmX0lRLkwh5aYv9Q6w,3, 40.0296379731608, 12848704
+ Philadelphia, vegetarian, Linda's Vegetarian Village, Philadelphia,19144, -75.1819599, PA,4.0, -NG3pA9LEXCxt0Fjd_aYYA,11, 40.0459083, 12848704
+ Philadelphia, pizza, New Zem Zem Pizza, Philadelphia,19144, -75.1732209, PA,2.0, 5UjINogSwLL6SKRM5mEZng,16, 40.0376602, 12848704
+ Philadelphia, soulfood, Tasties, Philadelphia,19144, -75.1677993, PA,2.5, KnyuQ1D7QE7X8eMk8T3kTA,16, 40.0317308, 12848704
+ Philadelphia, indpak, Chatkharay Indian and Pakistani Grill, Philadelphia,19144, -75.1805589, PA,2.0, 9Vn3m5EafV-Oc69DkPyt3A,40, 40.0301244, 12848704
+ Philadelphia, pizza, Gennaro's Famous Pizza, Philadelphia,19144, -75.1790941, PA,2.0, QzvJ0jFrCo2lldh5CiNcCQ,14, 40.0312593, 12848704
+ Philadelphia, bbq, Charlie Gray's Rib Crib, Philadelphia,19144, -75.181335, PA,3.5, oa5h-kz5oFYHBKpasKYXQw,41, 40.0445899, 12848704
+ Philadelphia, asianfusion, 2 in One Cafe, Philadelphia,19144, -75.1745343, PA,3.0, DfIZd-uCYMBOXfFOvnAeZQ,6, 40.0195284, 12848704
+ Philadelphia, chinese, Hung Hing, Philadelphia,19144, -75.174886, PA,4.5, ihdiiKGlWTpY9ETo_QmIhg,2, 40.025487, 12848704
+ Philadelphia, japanese, New Wok Restaurant, Philadelphia,19144, -75.1796449489395, PA,5.0, xAeVB1cycieoJFzBz7EoIQ,1, 40.0324409167473, 12848704
+ Philadelphia, burgers, Wendy's, Philadelphia,19144, -75.1779684, PA,2.0, mAEA3VaTrvs64VLP2p_SsQ,5, 40.0311825, 12848704
+ Philadelphia, newamerican, Mike's Family Restaurant, Philadelphia,19144, -75.177136, PA,2.5, ABF9L_AKAxkIHGdTKPHZxQ,2, 40.0340149, 12848704
+ Philadelphia, breakfast_brunch, Trio Breakfast \u0026 Lunch, Philadelphia,19144, -75.17806, PA,3.5, R76nXl5oTep-d1ZGPZSimQ,20, 40.031291, 12848704
+ Philadelphia, sandwiches, Explorer's Den Steaks and Hoagies, Philadelphia,19144, -75.1579008, PA,3.5, cSLT_5UIlQ6JKzgYklBNeQ,21, 40.0410708, 12848704
+ Philadelphia, chinese, Mandarin House, Philadelphia,19144, -75.1816294, PA,5.0, odTOJ5Oyed-c6Fl8qbkYtA,1, 40.0451315, 12848704
+ Philadelphia, pizza, Southside Pizza, Philadelphia,19144, -75.1742704, PA,2.0, YbiJILKQQyl8HWqyQz0W4g,4, 40.0196895, 12848704
+ Philadelphia, diners, K \u0026 J Caribbean American Diner, Philadelphia,19144, -75.175699, PA,3.0, PuukXxCe1V7OhG-pcViC9Q,14, 40.0338069, 12848704
+ Philadelphia, african, AM Five Star Cuisine, Philadelphia,19144, -75.177958, PA,3.5, L4Uhdo_brkfMlVQNYbzRTA,2, 40.033171, 12848704
+ Philadelphia, vegan, East Eden Vegan Catering, Philadelphia,19144, -75.1740407, PA,5.0, X4hVkdlXJuTVEr13ZN7Ptg,1, 40.035192, 12848704
+ Philadelphia, pizza, Giovanni's Pizzeria, Philadelphia,19144, -75.175892, PA,2.5, L2pmVQMrpY-yZwZkZoRt5g,19, 40.0336651, 12848704
+ Philadelphia, tradamerican, Champagne Cafe, Philadelphia,19144, -75.174434, PA,2.5, tsqyVhSaI72JTNpy4u7QGg,10, 40.03644, 12848704
+ Philadelphia, seafood, Best In Town Seafood, Philadelphia,19144, -75.1777754, PA,3.0, hOa2ZwZkOnEQVevZW1fo-Q,1, 40.0332889, 12848704
+ Philadelphia, pizza, Mecca Halal Pizza Resturant, Philadelphia,19144, -75.1661309, PA,3.0, fFXxDeWoGL246vLVNYzn_Q,2, 40.030921, 12848704
+ Philadelphia, pizza, Nick's Famous Pizza, Philadelphia,19144, -75.178651, PA,3.5, StJngGaxDOJDjNmsCcKuAQ,11, 40.035161, 12848704
+ Philadelphia, delis, Park Manor Deli, Philadelphia,19144, -75.1798705, PA,3.5, 9EkU93HxB6gMAvuvkfVqVA,8, 40.0303191, 12848704
+ Philadelphia, breakfast_brunch, Brothers Breakfast and Lunch, Philadelphia,19144, -75.1779436, PA,, 1FEvuYFdNQygFFAKtKu3ag,, 40.0331602, 12848704
+ Philadelphia, delis, Kripa Convience \u0026 Deli, Philadelphia,19144, -75.1744734, PA,, zP_wXDD1P8cx0wBJAtnSQA,, 40.0194771, 12848704
+ Philadelphia, breakfast_brunch, Newmans Grill, Philadelphia,19144, -75.1775407, PA,3.0, LF1hK-Q68vY3t7Xrrd6mLw,9, 40.038901, 12848704
+ Philadelphia, breakfast_brunch, John's Diner, Philadelphia,19144, -75.1732012, PA,3.5, x8cu2dYQHfQYSDLxGBg5cw,5, 40.0377397, 12848704
+ Philadelphia, seafood, Crab House 5706, Philadelphia,19144, -75.1752601, PA,2.5, Y0Z13K5KquO0OT3TEuLmVQ,10, 40.035926, 12848704
+ Philadelphia, chinese, Happy Fortune, Philadelphia,19144, -75.1574014916381, PA,3.5, vpSB31PoS6ofPNXPZomzIg,3, 40.0408126025937, 12848704
+ Philadelphia, delis, Mom \u0026 Pop Deli, Philadelphia,19144, -75.161942, PA,, asy4H5do9L0jg-SNUFUeRQ,, 40.022515, 12848704
+ Philadelphia, bbq, Ms D's Soulfood \u0026 BBQ, Philadelphia,19144, -75.1649769, PA,2.0, yAwSBNIaS2OaRcwuPTJOoQ,4, 40.04493, 12848704
+city, category_aliases, biz_name, city_state,zipcode, longitude, state,ratingValue, biz_id,ratingCount, latitude, geoquad
+ Philadelphia, hotdogs, Wendy's, Philadelphia,, -75.1756830747811, PA,2.0, rpKsCkLKypkHsuwPyxPwKw,8, 40.0102141490135, 12848704
+ Philadelphia, foodtrucks, Auntie's Food Truck, Philadelphia,, -75.1557049520282, PA,, gcFr7Htd2-Bt6nMAzkX5jA,, 40.0399789962393, 12848704
+ Philadelphia, sportsbars, Adrian's Sports Bar And Grill, Philadelphia,19144, -75.176934, PA,3.5, Qq4bJfagVGJ3Z7BDbkiXuA,4, 40.03796, 12848704
+ Philadelphia, chinese, First Wok, Philadelphia,19144, -75.1775528, PA,3.5, YtMgMdZfjlK6ogDIGiOJSw,7, 40.0332838, 12848704
+ Philadelphia, coffee, Java City, Philadelphia,19144, -75.1586601923467, PA,, wvkP50GVv03N2M6p-gCY9A,, 40.040674243019, 12848704
+ Philadelphia, pizza, Great London Pizza Restaurant, Philadelphia,19144, -75.173702, PA,, ZDyYlGkdt2UDXRpAvetgcw,, 40.034592, 12848704
+ Philadelphia, restaurants, Lee's Seafood World, Philadelphia,19144, -75.177958, PA,, PlejRMKdkxjTbFYERftIhw,, 40.033171, 12848704
+ Philadelphia, salad, Panera Bread, Philadelphia,19144, -75.2099266648292, PA,4.5, 6liIxwAycRwnzefTVqGGEw,3, 40.0082532889342, 12848362
+ Philadelphia, newamerican, New Golden House, Philadelphia,19144, -75.1761315, PA,5.0, mfMb53r8mEtLtoqSOkDxXg,1, 40.0377943, 12848704
+ Philadelphia, chinese, China House, Philadelphia,19144, -75.178651, PA,3.0, M6MgV7UZB1e8kOHz1ZJmog,16, 40.035161, 12848704
+ Philadelphia, pizza, Alsalam Pizza \u0026 Restaurant, Philadelphia,19144, -75.1650024, PA,1.0, oSiNBM-Njs07clsHQqaOLw,1, 40.0307003, 12848704
+ Philadelphia, newamerican, Big Mouth's Taste, Philadelphia,19144, -75.1751236617565, PA,, WY_xdQCgPBccnIFoXjDpkA,, 40.0199512392282, 12848704
+ Philadelphia, hotdogs, KFC, Philadelphia,19144, -75.1783, PA,2.0, HgjHiBZtYXgpsBhEITn-EA,2, 40.0326, 12848704
+ Philadelphia, delis, Gwen \u0026 Will's Deli-Grocery, Philadelphia,19144, -75.17008, PA,, FKEwtcWDl5mZMUfrz6KzVw,, 40.040128, 12848704
+ Philadelphia, delis, Sin Kon Hak, Philadelphia,19144, -75.167698, PA,, 92m8WHgr_yzE3TMEyUsUnQ,, 40.025144, 12848704
+ Philadelphia, restaurants, Changsam Restaurant, Philadelphia,19144, -75.164263, PA,, FunWPphUWNp9KdpgbkOayw,, 40.029266, 12848704
+ Philadelphia, delis, Philly's Deli \u0026 Market, Philadelphia,19144, -75.1646721, PA,, _pEUKVFn2xVSGzuYe-BmEw,, 40.030031, 12848704
+ Philadelphia, restaurants, Kenny's Seafood \u0026 Steaks, Philadelphia,19144, -75.166855, PA,, hPC-w-DdV2Bu00JpBcDVaA,, 40.025219, 12848704
+ Philadelphia, burgers, McDonald's, Philadelphia,19144, -75.1743527, PA,1.5, qaEqiGzQ67ief_yoKP97Hw,3, 40.0367161, 12848704
+ Philadelphia, donuts, Quality Donuts, Philadelphia,19144, -75.1768998, PA,3.0, UWp_tiLgKaz2U0FupkfCeQ,1, 40.0341462, 12848704
+ Philadelphia, caribbean, Kingston City Restaurant, Philadelphia,19144, -75.1650186, PA,2.5, 9v-CkheflZhvHS9QT3-S6Q,17, 40.0449465, 12848704
+ Philadelphia, delis, Happy Breakfast Lodge, Philadelphia,19144, -75.1735964, PA,, Y6q3Yq91BMx-atZSNYsfAg,, 40.0353151, 12848704
+ Philadelphia, chinese, Grace Garden Chinese Restaurant, Philadelphia,19144, -75.1644501, PA,, SXMI-42lK9VOWpi2rZzhOQ,, 40.0298769, 12848704
+ Philadelphia, pizza, Halal Chicken Pizza 2, Philadelphia,19144, -75.1648686, PA,1.0, 6fvx1kjl0OFbUWIowX1Q-A,1, 40.045116, 12848704
+ Philadelphia, restaurants, Gray's Family Restaurant, Philadelphia,19144, -75.164202, PA,, sNUbDRRvEjjxX1GwJEqvtw,, 40.029812, 12848704
+ Philadelphia, delis, Sugar Stick Deli, Philadelphia,19144, -75.1649413, PA,, MjIdJwOMY6g9SuYqb3BpOQ,, 40.0299373, 12848704
+ Philadelphia, delis, Germantown Deli, Philadelphia,19144, -75.1753951, PA,, m9XgtzTKlY2wmED-ZAbovQ,, 40.0359427, 12848704
+ Philadelphia, restaurants, Grace Wok, Philadelphia,19144, -75.1654869, PA,, KpzmuOwb6LHWREDgV226eQ,, 40.044851, 12848704
+ Philadelphia, breakfast_brunch, Nostalgia Cafe, Philadelphia,19144, -75.1806671, PA,1.5, NPkZI2wPgjEn3TfHJ4g9Mg,3, 40.0329562, 12848704
+ Philadelphia, chinese, Super Chinese Restaurant, Philadelphia,19144, -75.1737318, PA,, tv-rl0A-D6Dk08VgVLm5Hg,, 40.0370638, 12848704
+ Philadelphia, delis, Mike's Breakfast and Deli, Philadelphia,19144, -75.177136, PA,4.0, KS4kh7vf0ytAO33PoX3d9Q,2, 40.0340149, 12848704
+ Philadelphia, hotdogs, Popeyes, Philadelphia,19144, -75.1768564, PA,5.0, tg8mH91AaGjLL93Eg8mL0A,1, 40.0333322, 12848704
+ Philadelphia, restaurants, Pauline's House, Philadelphia,19144, -75.165081, PA,, olmmlCN0_z_IT1iDZQfUCA,, 40.026146, 12848704
+ Philadelphia, pizza, New Germantown Pizza, Philadelphia,19144, -75.1627127, PA,2.0, 7YZsJLbmUFTgy12q7ARq1A,7, 40.0288138, 12848704
+ Philadelphia, chinese, Beijing Garden, Philadelphia,19144, -75.1620368286967, PA,, TVWqK2n81XvqaS91uSEzKw,, 40.0225725380345, 12848704
+ Philadelphia, seafood, Seafood Sensations, Philadelphia,19144, -75.1648685, PA,2.0, x1ybgp9xeE4KXnAcyhH-2Q,5, 40.045116, 12848704
+ Philadelphia, pizza, Alba Pizza, Philadelphia,19144, -75.1802573, PA,4.0, -k0SQn1uQVn0FN61uXYMsw,1, 40.0420464, 12848704
+ Philadelphia, restaurants, Wic Cafe, Philadelphia,19144, -75.1724764, PA,, 7SRU-KHSsXnaev3Pi0ny4Q,, 40.0155227, 12848704
+ Philadelphia, delis, Sam's II, Philadelphia,19144, -75.1873059, PA,, 7QtBzEUKggit_ABOyuCcZw,, 40.0369057, 12848704
+ Philadelphia, pizza, Ed's Pizza House, Philadelphia,19144, -75.1683745, PA,2.0, hdcke4Vt0WZ42KbdBIVpgA,2, 40.0255735, 12848704
+ Philadelphia, delis, Park Drive Manor Deli, Philadelphia,19144, -75.1852093, PA,, BAsQ9yTNE3B044QOkJy-UQ,, 40.0307576, 12848704

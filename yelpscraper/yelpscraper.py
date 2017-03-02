@@ -11,6 +11,9 @@ import argparse
 from bs4 import BeautifulSoup
 from utils.networker import  *
 from collections import deque
+import os
+import pandas as pd
+import numpy as np
 
 def get_yelp(zipcode, page_num):
     """get yelp address for given zipcode and page number."""
@@ -84,9 +87,13 @@ def get_attribute(address, tor=False):
     except:
         review_count = ''
         rating_value = ''
+    try:
+        zipcode = soup.find('span', {'itemprop': 'postalCode'}).get_text()
+    except:
+        zipcode = ''
     my_dict['ratingValue'] = rating_value
     my_dict['ratingCount'] = review_count
-
+    my_dict['zipcode'] = zipcode
     for tag in soup.find_all('script'):
         if tag.find(string=re.compile("longitude")):
             text = tag.contents[0].splitlines()[-3].strip()
@@ -104,15 +111,32 @@ def get_attribute(address, tor=False):
 def get_zipcode():
     """read zipcodes from file."""
     with open('./data/zipcodes.csv', 'r+') as file:
-        zipcodes = [
-            int(zipcode.strip()) for zipcode in file.read().split('\n')
-            if zipcode.strip()
-        ]
+        zipcodes = [int(zipcode.strip()) for zipcode in file.read().split('\n')
+                    if zipcode.strip()]
     return zipcodes
 
+def get_scraped_biz(zipcode):
+    "get the biz_id and resturant names that are already scrape"
+    try:
+        files = os.listdir('./data/')
+    except:
+        print('No scraped resturants')
+        return [],[]
+    attr_files = [file for file in files if str(zipcode)+'_attributes' in file]
+    biz_id = np.array([])
+    biz_name = np.array([])
+    for file in attr_files:
+        dat = pd.read_csv('./data/' + file)
+        biz_id = np.append(biz_id, dat[' biz_id'].values)
+        biz_name = np.append(biz_name, dat[' biz_name'].values)
+    biz_name = map(unicode, list(biz_name))
+    biz_id = map(unicode, list(biz_id))
+    biz_name = [name.lstrip() for name in biz_name]
+    biz_id = [id.lstrip() for id in biz_id]
+    return biz_name, biz_id
 
 def crawl(zipcodes=None, tor=False, sleep_time=10):
-    """crawl through list of zipcodes."""
+    """crawl through li.st of zipcodes."""
     if tor:
         ip_address = get_current_ip()
         set_new_ip()
@@ -124,15 +148,29 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
     request_count = 0
     flag = True
     header_flag = True
-    resturant_list = []
     zipcodes = [zipcodes] if zipcodes else get_zipcode()
     for zipcode in zipcodes:
+        page = 0
+        request_count = 0
         flag = True
+        out_of_zipcode_resturant = 0
+        biz_names, biz_ids = get_scraped_biz(zipcode)
+        if page:
+            answer = raw_input('Next zipcode? (y/n)')
+            if answer == 'y':
+                pass
+            elif answer == 'n':
+                break
+            else:
+                break
         while flag:
             request_count += 1
             print('page {}, at zipcode {}'.format(page, zipcode))
             resturants, flag = get_resturants(zipcode, page, tor)
             for resturant in resturants:
+                if resturant in biz_names:
+                    print('repeated biz_name: ', resturant)
+                    continue
                 if request_count % 50 == 0 and tor:
                     ensure_new_ip(used_ips)
                     request_count = 0
@@ -143,16 +181,18 @@ def crawl(zipcodes=None, tor=False, sleep_time=10):
                     request_count = 0
                 request_count += 1
                 biz_id, review = get_review(resturants[resturant], tor)
-                if biz_id in resturant_list:
-                    print('repeated resturant:', resturant)
+                if biz_id in biz_ids:
+                    print('repeated biz_id:', resturant)
                     continue
-                print('scraping returant:' + resturant +
-                        ', at zipcode:' + str(zipcode) +
-                        ', current IP address:' + ip_address)
-                resturant_list.append(biz_id)
                 request_count += 1
                 attr_dict = get_attribute(resturants[resturant], tor)
-                attr_dict['zipcode'] = str(zipcode)
+                if attr_dict['zipcode'] and int(attr_dict['zipcode']) != zipcode:
+                    out_of_zipcode_resturant += 1
+                    continue
+                print('scraping returant:' + resturant +
+                        ', at zipcode:' + attr_dict['zipcode'] +
+                        ', current IP address:' + ip_address)
+                biz_ids.append(biz_id)
                 with open('./data/' + str(zipcode) +'_attributes.csv', 'a') as file:
                     if header_flag:
                         file.write(','.join(list(attr_dict.keys())) + '\n')
